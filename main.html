@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <html lang="ar-AR">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+        <header>
+                <img class="logo" src="Img/logo.png" />
+
+                <div class=" word-of-thepage">
+                        <a class="a1" href="index.html">السجلات</a>
+                        <a class="a2" href="https://mc.gov.sa/ar/Regulations/Pages/default.aspx"
+                                target="_blank">الانظمة</a>
+                        <a class="a3" href="https://mc.gov.sa/ar/About/who-we-are/Pages/default.aspx" target="_blank">عن
+                                الوزارة</a>
+                        <a class="a4" href="index.html">الرئيسية</a>
+                </div>
+                <div>
+
+                </div>  
+        </header>
+
+
+</body>
+<section>
+        <div class="RA">
+                <div class="RA2">
+                        <div class="overlap-group"></div>
+
+
+                        <h1 class="s1">أبحث عن سجلك التجاري</h1>
+
+                        <div class="RA-OTP"></div>
+                        <img class="RA-OTP" src="Img/otp.png">
+
+                        <form id="csnum_form">
+
+
+                                <label class="la1">رقم السجل التجاري</label>
+                                <br>
+                                <input class="input1" type="text" id="CSnumber" required placeholder="أدخل رقم السجل" />
+                                <label class="la7" id="message"></label>
+
+                                <br>
+
+                        </form>
+
+                        <form>
+
+                                <label class="la2">رمز التحقق</label>
+
+                                <input class="input2" type="text" id="numberOTP" required placeholder="أدخل رمز التحقق"
+                                        maxlength="5"> 
+                                <br>
+                        </form>
+
+                        <button type="button,submit" id="myButton" onclick="fetchData()">بحث</button>
+
+</section>
+<div id="hideBox">
+        <div class="header">
+
+                <div class="box">
+                        <div class="rad">
+
+                                <div CLASS="t1">بيانات السجل التجاري </div>
+
+                                <div CLASS="t2" id="nameofCR"></div>
+
+
+                                <div class="t3">رقم السجل التجاري</div>
+                                <div class="t4" id="test"></div>
+                                <div class="line"></div>
+
+                                <table class="table1">
+                                        <tr>
+                                                <td class="c1" id="a1"></td>
+                                                <td>حالة السجل</td>
+
+                                                <td class="c1" id="a2"></td>
+                                                <td>الموقع الالكتروني</td>
+
+                                                <td class="c1" id="a3"></td>
+                                                <td>الكيان التجاري</td>
+                                        </tr>
+                                </table>
+                                <table class="table2">
+                                        <tr>
+                                                <td class="c1" id="a4"></td>
+                                                <td>رأس المال</td>
+
+                                                <td class="c1" id="a5"></td>
+                                                <td>صندوق البريد</td>
+
+                                                <td class="c1" id="a6"></td>
+                                                <td>هاتف</td>
+
+
+                                        </tr>
+                                </table>
+
+
+                                <table class="table3">
+                                        <tr>
+
+                                                <td class="c1" id="a7"></td>
+                                                <td>مدة المنشأة</td>
+
+                                                <td class="c1" id="a8"></td>
+                                                <td>تاريخ اصدار السجل</td>
+
+                                                <td class="c1" id="a9"></td>
+                                                <td>المدينة</td>
+                                        </tr>
+                                </table>
+                                <table class="table4">
+                                        <tr>
+
+                                                <td class="c1" id="a10"></td>
+                                                <td>الرمز البريدي</td>
+
+                                                <td class="c1" id="a11"></td>
+                                                <td>تاريخ انتهاء السجل </td>
+
+                                                <td class="c1" id="a12"></td>
+                                                <td>النشاط التجاري</td>
+                                        </tr>
+                                </table>
+                                <table class="table5">
+                                        <tr>
+                                                <td class="c1" id="a13"></td>
+                                                <td>العنوان</td>
+
+
+                                        </tr>
+                                </table>
+                                <table class="table6">
+                                        <tr>
+                                                <td class="c1" id="a14"></td>
+                                                <td>الرقم الوطني الموحد للمنشأة</td>
+
+
+                                        </tr>
+                                </table>
+                        </div>
+                </div>
+        </div>
+</div>
+<footer class="p1">جميع الحقوق محفوظة © 2024 لوزارة التجارة</footer>
+
+<script src="main.js"></script>
+
+
+</body> 
+
+</html>
